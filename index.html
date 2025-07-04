@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Frosty DZN | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Frosty DZN</h1>
+      <p>Graphic Designer & Software Developer</p>
+    </header>
+
+    <section id="graphic-design">
+      <div class="container">
+        <h2>Graphic Design</h2>
+        <p class="description">
+          From logos and posters to social media content and UI mockups, explore
+          a selection of my creative design projects built for personal brands
+          and startups.
+        </p>
+
+        <h3>Thumbnails</h3>
+        <div class="project-grid">
+          <div class="card animated">
+            <img src="thumbnail1.png" alt="Thumbnail 1" />
+            <p>Thumbnail Design 1</p>
+          </div>
+          <div class="card animated">
+            <img src="thumbnail2.png" alt="Thumbnail 2" />
+            <p>Thumbnail Design 2</p>
+          </div>
+          <div class="card animated">
+            <img src="thumbnail3.png" alt="Thumbnail 3" />
+            <p>Thumbnail Design 3</p>
+          </div>
+          <div class="card animated">
+            <img src="thumbnail4.png" alt="Thumbnail 4" />
+            <p>Thumbnail Design 4</p>
+          </div>
+          <div class="card animated">
+            <img src="thumbnail5.png" alt="Thumbnail 5" />
+            <p>Thumbnail Design 5</p>
+          </div>
+        </div>
+
+        <h3>Posters</h3>
+        <div class="project-grid">
+          <div class="card animated">
+            <img src="poster1.png" alt="Poster 1" />
+            <p>Poster Design 1</p>
+          </div>
+          <div class="card animated">
+            <img src="poster2.png" alt="Poster 2" />
+            <p>Poster Design 2</p>
+          </div>
+          <div class="card animated">
+            <img src="poster3.png" alt="Poster 3" />
+            <p>Poster Design 3</p>
+          </div>
+          <div class="card animated">
+            <img src="poster4.png" alt="Poster 4" />
+            <p>Poster Design 4</p>
+          </div>
+          <div class="card animated">
+            <img src="poster5.png" alt="Poster 5" />
+            <p>Poster Design 5</p>
+          </div>
+        </div>
+
+        <h3>Headers</h3>
+        <div class="project-grid">
+          <div class="card animated">
+            <img src="header1.png" alt="Header 1" />
+            <p>Header Design 1</p>
+          </div>
+          <div class="card animated">
+            <img src="header2.png" alt="Header 2" />
+            <p>Header Design 2</p>
+          </div>
+          <div class="card animated">
+            <img src="header3.png" alt="Header 3" />
+            <p>Header Design 3</p>
+          </div>
+          <div class="card animated">
+            <img src="header4.png" alt="Header 4" />
+            <p>Header Design 4</p>
+          </div>
+          <div class="card animated">
+            <img src="header5.png" alt="Header 5" />
+            <p>Header Design 5</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="software-dev">
+      <div class="container">
+        <h2>Software Development</h2>
+        <p class="description">
+          These are apps and systems I’ve built using modern tools and
+          frameworks, ranging from AI job automation to full-stack portfolio
+          projects.
+        </p>
+
+        <div class="project-grid">
+          <div class="card animated">
+            <a
+              href="https://github.com/yourusername/ai-job-applicator"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="dev1.png" alt="AI Job Application System" />
+            </a>
+            <h3>AI Job Application System</h3>
+            <p>
+              Automatically applies to jobs using preferences and filters to
+              save you hours of manual effort.
+            </p>
+          </div>
+          <div class="card animated">
+            <a
+              href="https://github.com/yourusername/sustainable-travel"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="dev2.png" alt="Sustainable Travel Assistant" />
+            </a>
+            <h3>Sustainable Travel Assistant</h3>
+            <p>
+              Eco-friendly web app that helps users find green routes and
+              transport using location data.
+            </p>
+          </div>
+          <div class="card animated">
+            <a
+              href="https://github.com/yourusername/macbook-tracker"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="dev3.png" alt="MacBook Asset Tracker" />
+            </a>
+            <h3>MacBook Asset Tracker</h3>
+            <p>
+              Inventory tool for managing MacBooks and IT gear in institutional
+              settings like schools or offices.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 Frosty DZN. All rights reserved.</p>
+      <div class="socials">
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Behance</a>
+        <a href="#">GitHub</a>
+      </div>
+    </footer>
+
+    <script>
+      const sections = document.querySelectorAll('section');
+      const revealOnScroll = () => {
+        sections.forEach((sec) => {
+          const top = sec.getBoundingClientRect().top;
+          if (top < window.innerHeight - 100) {
+            sec.classList.add('visible');
+          }
+        });
+      };
+      window.addEventListener('scroll', revealOnScroll);
+      window.addEventListener('load', revealOnScroll);
+    </script>
+  </body>
+</html>
