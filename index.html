@@ -159,8 +159,9 @@
     <!-- Lightbox Modal -->
 <div id="lightbox" class="lightbox">
   <span class="close">&times;</span>
-  <img class="lightbox-content" id="lightbox-img" src="" alt="Full View" />
+  <img id="lightbox-img" class="lightbox-img" src="" alt="Expanded view" />
 </div>
+
 
     <footer>
       <p>© 2025 Frosty DZN. All rights reserved.</p>
@@ -192,6 +193,7 @@
   const lightboxImg = document.getElementById("lightbox-img");
   const closeBtn = document.querySelector(".close");
 
+  // Add click listener to all images inside .card
   document.querySelectorAll(".card img").forEach((img) => {
     img.addEventListener("click", () => {
       lightbox.style.display = "flex";
@@ -210,6 +212,5 @@
     }
   });
 </script>
-
   </body>
 </html>
